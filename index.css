@@ -62,11 +62,16 @@ h3 {
 	text-align: center;
 }
 
-#items-list div {
+#items-list a {
 	padding: 15px 0;
 	background-color: hsl(0, 0%, 20%);
 	border-radius: 8px;
 	font-weight: 700;
+	&:hover {
+		background-color: hsl(75, 94%, 57%);
+		color: hsl(0, 0%, 20%);
+		cursor: pointer;
+	}
 }
 
 .green-text {
