@@ -36,6 +36,8 @@ body {
 }
 
 main {
+	width: 100%;
+	max-width: 400px;
 	background-color: var(--color-grey-800);
 	padding: 40px;
 	border-radius: 15px;
@@ -45,10 +47,11 @@ header {
 	text-align: center;
 }
 
-h3 {
+h1 {
 	margin: 0;
 	font-size: 25px;
 	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 .header-img {
