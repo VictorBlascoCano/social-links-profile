@@ -1,3 +1,15 @@
+:root {
+	--color-green: hsl(75, 94%, 57%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-gray: hsl(30, 10%, 34%);
+	--color-grey-700: hsl(0, 0%, 20%);
+	--color-grey-800: hsl(0, 0%, 12%);
+	--color-grey-900: hsl(0, 0%, 8%);
+	--color-blue: hsl(228, 45%, 44%);
+
+	--ff-inter: "Inter", serif;
+}
+
 @font-face {
 	font-family: "Inter";
 	src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
@@ -6,15 +18,15 @@
 *,
 *::before,
 *::after {
+	margin: 0;
 	box-sizing: border-box;
-	font-family: "Inter", serif;
+	font-family: var(--ff-inter);
 }
 
 body {
-	margin: 0;
 	min-height: 100dvh;
-	background-color: hsl(0, 0%, 8%);
-	color: hsl(0, 0%, 100%);
+	background-color: var(--color-grey-900);
+	color: var(--color-white);
 	padding: 40px;
 	display: flex;
 	flex-direction: column;
@@ -24,7 +36,7 @@ body {
 }
 
 main {
-	background-color: hsl(0, 0%, 12%);
+	background-color: var(--color-grey-800);
 	padding: 40px;
 	border-radius: 15px;
 }
@@ -48,9 +60,9 @@ h3 {
 	font-size: 11px;
 	text-align: center;
 	margin-top: 32px;
-	color: hsl(30, 10%, 34%);
+	color: var(--color-gray);
 	& a {
-		color: hsl(228, 45%, 44%);
+		color: var(--color-blue);
 	}
 }
 
@@ -64,18 +76,18 @@ h3 {
 
 #items-list a {
 	padding: 15px 0;
-	background-color: hsl(0, 0%, 20%);
+	background-color: var(--color-grey-700);
 	border-radius: 8px;
 	font-weight: 700;
 	&:hover {
-		background-color: hsl(75, 94%, 57%);
-		color: hsl(0, 0%, 20%);
+		background-color: var(--color-green);
+		color: var(--color-grey-700);
 		cursor: pointer;
 	}
 }
 
 .green-text {
-	color: hsl(75, 94%, 57%);
+	color: var(--color-green);
 	font-size: 14px;
 	font-weight: bold;
 }
